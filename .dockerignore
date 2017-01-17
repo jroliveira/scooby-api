@@ -1,0 +1,9 @@
+.git
+.editorconfig
+.eslintrc
+.gitignore
+.jscsrc
+.jshintrc
+docker-compose.yml
+README.md
+node_modules

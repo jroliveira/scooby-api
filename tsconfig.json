@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "experimentalDecorators": true,
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "atom": {
+    "rewriteTsconfig": false
+  },
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules"
+  ]
+}
