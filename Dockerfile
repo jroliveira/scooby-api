@@ -1,9 +1,9 @@
-FROM node:7
+FROM node:7.7
 
 RUN mkdir /app
 COPY . /app
 
-RUN cd /app; npm install --silent; npm install nodemon --global --silent 
+RUN cd /app; npm install --silent; npm install nodemon --global --silent
 
 EXPOSE 8080
 

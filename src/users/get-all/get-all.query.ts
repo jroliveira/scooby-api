@@ -3,7 +3,9 @@ import { User } from "./../";
 
 const command = `
   MATCH
-    (user:User)-[:HAS]->(project:Project)
+    (user:User)
+  OPTIONAL MATCH
+    (user)-[:HAS]->(project:Project)
   RETURN
     user.name AS name,
     count(project) AS projects

@@ -7,40 +7,41 @@
     "type": "git",
     "url": "https://github.com/jroliveira/scooby-api.git"
   },
-  "author": {
-    "name": "Junior Oliveira",
-    "url": "http://planning-poker.io"
-  },
+  "keywords": [
+    "nodejs",
+    "docker-compose",
+    "neo4j",
+    "typescript",
+    "koa2"
+  ],
+  "author": "Junior Oliveira <junolive@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jroliveira/scooby-api/issues"
   },
   "readmeFilename": "README.md",
   "engines": {
-    "node": ">=7"
+    "node": ">=7.7"
   },
-  "main": "index.js",
+  "main": "./src/app.ts",
   "scripts": {
     "start": "nodemon -L"
   },
   "devDependencies": {
     "@types/node": "^7.0.5",
-    "babel-core": "^6.21.0",
-    "babel-plugin-transform-async-to-generator": "^6.16.0",
-    "babel-preset-es2015-node5": "^1.2.0",
-    "babel-preset-stage-1": "^6.16.0",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "joi": "^10.2.0",
+    "joi": "^10.2.2",
     "kcors": "^2.0.0",
     "koa": "^2.0.0",
-    "koa-bodyparser": "^3.2.0",
+    "koa-bodyparser": "^4.1.0",
     "koa-compress": "^2.0.0",
     "koa-json": "^2.0.0",
     "koa-logger": "^2.0.0",
     "koa-router": "^7.1.0",
     "neo4j-driver": "^1.0.5",
-    "request": "^2.79.0",
+    "request": "^2.80.0",
     "request-promise": "^4.1.1",
     "ts-node": "^2.1.0",
     "typescript": "^2.2.1"

@@ -3,7 +3,9 @@ import { Project } from "./../";
 
 const command = `
   MATCH
-    (user:User)-[:HAS]->(project:Project)-[has:HAS]->(dependency:Dependency)
+    (user:User)-[:HAS]->(project:Project)
+  OPTIONAL MATCH
+    (project)-[has:HAS]->(dependency:Dependency)
   WHERE
     user.name = {user} AND project.name = {project}
   RETURN
